@@ -1,0 +1,342 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  background-image: url(img/fondoSpace.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.fondo-stars {
+  width: 100%;
+  height: 100%;
+  background-image: url(img/spaceBack.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  opacity: .6;
+}
+
+.fondo-stars-back {
+  width: 100%;
+  height: 100%;
+  background-image: url(img/spaceBlueTop.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: .5;
+  position: absolute;
+}
+
+header {
+  width: 100%;
+  position: relative;
+}
+
+ul {
+  width: 100%;
+  position: absolute;
+  top: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+
+li {
+  list-style: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: .2s all ease-in-out;
+  transition: .2s all ease-in-out;
+}
+
+ul li:nth-child(1) {
+  font-size: 2.5em;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  padding-left: 1em;
+  opacity: 1;
+}
+
+ul li:nth-child(1) a:hover {
+  opacity: .5;
+}
+
+ul li:nth-child(2) a:hover, .color-mercury {
+  color: #6e7b98;
+}
+
+ul li:nth-child(3) a:hover, .color-venus {
+  color: #CAAF77;
+}
+
+ul li:nth-child(4) a:hover, .color-earth {
+  color: #8E7B60;
+}
+
+ul li:nth-child(5) a:hover, .color-mars {
+  color: #D27F35;
+}
+
+ul li:nth-child(6) a:hover, .color-jupiter {
+  color: #D1C2AD;
+}
+
+ul li:nth-child(7) a:hover, .color-saturn {
+  color: #7A6B57;
+}
+
+ul li:nth-child(8) a:hover, .color-uranus {
+  color: #BAE0E4;
+}
+
+ul li:nth-child(9) a:hover, .color-neptune {
+  color: #3C5CDF;
+}
+
+.color-white {
+  color: white;
+}
+
+main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 15em;
+}
+
+.arrows {
+  width: 20%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.arrows .arrow-up, .arrows .arrow-down {
+  height: 90px;
+  width: 60px;
+  background-size: 60px 90px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  opacity: 1;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.arrows .arrow-up:hover, .arrows .arrow-down:hover {
+  opacity: .5;
+}
+
+.arrows .arrow-up {
+  background-image: url(assets/arrow-up.svg);
+}
+
+.arrows .arrow-down {
+  background-image: url(assets/arrow-down.svg);
+}
+
+.planets {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  bottom: 16em;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mercury, .venus, .earth, .mars, .jupiter, .saturn, .uranus, .neptune {
+  width: 400px;
+  height: 300px;
+  background-size: 400px 300px;
+  margin-bottom: 17em;
+  position: relative;
+  top: 13em;
+}
+
+.mercury {
+  background-image: url(img/18_mercury_new.png);
+}
+
+.venus {
+  background-image: url(img/27_venus_jg.png);
+}
+
+.earth {
+  background-image: url(img/17_earth.png);
+}
+
+.mars {
+  background-image: url(img/19_mars.png);
+}
+
+.jupiter {
+  background-image: url(img/16_jupiter_new.png);
+}
+
+.saturn {
+  background-image: url(img/28_saturn.png);
+}
+
+.uranus {
+  background-image: url(img/29_uranus.png);
+}
+
+.neptune {
+  background-image: url(img/30_neptune.png);
+}
+
+.info-planets {
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  bottom: 16em;
+}
+
+.info-mercury, .info-venus, .info-earth, .info-mars, .info-jupiter, .info-saturn, .info-uranus, .info-neptune {
+  font-size: 1.5em;
+  margin-bottom: 13em;
+  position: relative;
+  top: 11em;
+}
+
+.info-mercury {
+  color: #6e7b98;
+}
+
+.info-venus {
+  color: #CAAF77;
+}
+
+.info-earth {
+  color: #8E7B60;
+}
+
+.info-mars {
+  color: #D27F35;
+}
+
+.info-jupiter {
+  color: #D1C2AD;
+}
+
+.info-saturn {
+  color: #7A6B57;
+}
+
+.info-uranus {
+  color: #BAE0E4;
+}
+
+.info-neptune {
+  color: #3C5CDF;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  font-size: 1.5em;
+}
+
+footer span {
+  font-size: 1.5em;
+  padding-top: 1.5em;
+  position: absolute;
+  margin-left: .5em;
+  bottom: -13px;
+}
+
+.white-star {
+  width: 5px;
+  height: 5px;
+  border-radius: 34% 66% 47% 53% / 63% 42% 58% 37%;
+  background-color: white;
+  position: absolute;
+  z-index: -1;
+}
+/*# sourceMappingURL=styles.css.map */
